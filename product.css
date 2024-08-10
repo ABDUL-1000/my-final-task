@@ -1,0 +1,36 @@
+/* Container for product card */
+.card {
+  width: 100%;
+  max-width: 540px;
+  margin: auto;
+}
+
+/* Resize images while keeping the entire image visible */
+.card img {
+  width: 100%;
+  max-width: 200px; /* Maximum width for the image */
+  max-height: 200px; /* Maximum height for the image */
+  object-fit: contain; /* Ensure the entire image is visible without cropping */
+  display: block; /* Ensures the image stays within the defined dimensions */
+  margin: auto; /* Center the image within its container */
+}
+
+/* Additional styles for related product cards */
+.related-product-card img {
+  width: 100%;
+  max-width: 150px; /* Maximum width for the related product images */
+  max-height: 150px; /* Maximum height for the related product images */
+  object-fit: contain;
+  display: block;
+  margin: auto;
+}
+
+/* Adjust the layout for the product and related products */
+.cart-view .row {
+  margin-top: 20px;
+}
+
+/* Additional styling */
+.cart-view h3 {
+  margin-bottom: 15px;
+}

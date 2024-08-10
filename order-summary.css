@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+h1, h2 {
+    color: #007bff;
+}
+
+.order-summary-page {
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.list-group-item {
+    background-color: #e9ecef;
+    border: none;
+}
+
+h5 {
+    font-size: 1.25rem;
+    color: #28a745;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}

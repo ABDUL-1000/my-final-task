@@ -1,0 +1,82 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-color: #343a40;
+    color: white;
+  }
+  
+  .navbar .nav-link {
+    color: white !important;
+  }
+  
+  .navbar .nav-link:hover {
+    color: #ffc107 !important;
+  }
+  
+  .cart-icon img {
+    filter: invert(1);
+  }
+  
+  .checkout h1, .checkout h2 {
+    font-weight: 600;
+    color: #343a40;
+  }
+  
+  .checkout .form-control {
+    border-radius: 8px;
+  }
+  
+  .checkout button {
+    background-color: #28a745;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .checkout button:hover {
+    background-color: #218838;
+  }
+  
+  .order-summary {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-summary ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .order-summary li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .order-summary li:last-child {
+    border-bottom: none;
+  }
+  
+  footer {
+    background-color: #343a40;
+  }
+  
+  footer p, footer i {
+    color: white;
+  }
+  
+  footer i {
+    font-size: 24px;
+    margin: 0 10px;
+  }
+  
+  footer i:hover {
+    color: #ffc107;
+  }
+  
