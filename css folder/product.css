@@ -5,17 +5,16 @@
   margin: auto;
 }
 
-/* Resize images while keeping the entire image visible */
+
 .card img {
   width: 100%;
-  max-width: 200px; /* Maximum width for the image */
-  max-height: 200px; /* Maximum height for the image */
-  object-fit: contain; /* Ensure the entire image is visible without cropping */
-  display: block; /* Ensures the image stays within the defined dimensions */
-  margin: auto; /* Center the image within its container */
+  max-width: 200px; 
+  max-height: 200px; 
+  display: block;
+  margin: auto; 
 }
 
-/* Additional styles for related product cards */
+
 .related-product-card img {
   width: 100%;
   max-width: 150px; /* Maximum width for the related product images */

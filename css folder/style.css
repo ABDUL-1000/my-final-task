@@ -128,7 +128,7 @@ body {
    .card{
      object-fit:cover
    }
-  /* Center images within the card */
+
 .card-img-center {
   display: block;
   margin-left: auto;
@@ -140,9 +140,9 @@ body {
 .small-text {
   font-size: 0.875rem; 
 }
-/* Hero section background */
+
 .hero {
-  background-image: url('./images/header-bg.jpg');
+  background-image: url('/images/header-bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -153,21 +153,20 @@ body {
   justify-content: center;
 }
 
-/* Container for centering text */
+
 .hero-text-container {
   text-align: center;
   padding: 0 1rem;
 }
 
-/* Hero text styles */
 .hero-text {
-  font-size: 3rem; /* Adjust the font size as needed */
+  font-size: 3rem; 
   font-weight: bold;
-  color: #fff; /* Ensure the text is readable against the background */
+  color: #fff; 
   animation: fadeInUp 2s ease-out;
 }
 
-/* Animation for text */
+
 @keyframes fadeInUp {
   0% {
       opacity: 0;

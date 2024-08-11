@@ -1,13 +1,13 @@
-let cartCountElement = document.querySelector('.cart-count');
-let cartView = document.querySelector('.cart-view');
-let cartData = JSON.parse(localStorage.getItem('cartData')) || []; // Load cart data from localStorage or initialize as empty
+let cartCountElement = document.querySelector(".cart-count");
+let cartView = document.querySelector(".cart-view");
+let cartData = JSON.parse(localStorage.getItem("cartData")) || []; // Load cart data from localStorage or initialize as empty
 
 // Initialize cart count
 let cartCount = cartData.length;
 cartCountElement.innerText = cartCount;
 
 function showProduct() {
-  let productId = localStorage.getItem('productId');
+  let productId = localStorage.getItem("productId");
   fetch(`https://fakestoreapi.com/products/${productId}`)
     .then((response) => response.json())
     .then((data) => {
@@ -33,7 +33,7 @@ function showProduct() {
       `;
       cartView.innerHTML = prodView;
 
-      // Fetch and display related products
+      // Fetching and display related products
       fetchRelatedProducts(data.category, data.id);
     });
 }
@@ -45,7 +45,7 @@ function fetchRelatedProducts(category, currentProductId) {
       let relatedProductsHTML = '<h3>Related Products</h3><div class="row">';
 
       products.forEach((product) => {
-        // Avoid showing the current product again in the related products
+        //  to Avoid showing the current product again in the related products
         if (product.id !== currentProductId) {
           relatedProductsHTML += `
             <div class="col-md-4 each-item mb-3">
@@ -62,29 +62,29 @@ function fetchRelatedProducts(category, currentProductId) {
         }
       });
 
-      relatedProductsHTML += '</div>';
+      relatedProductsHTML += "</div>";
       cartView.innerHTML += relatedProductsHTML; // Append related products to the prodView
     });
 }
 
 // View a related product
 function viewRelatedProduct(productId) {
-  localStorage.setItem('productId', productId); // Update the product ID in localStorage
+  localStorage.setItem("productId", productId); // Update the product ID in localStorage
   showProduct(); // Reload the product view with the new product
 }
 
 function addToCart(productId, quantity) {
   // Check if product is already in the cart
-  let existingProduct = cartData.find(item => item.productId === productId);
-  
+  let existingProduct = cartData.find((item) => item.productId === productId);
+
   if (existingProduct) {
-    alert('This product is already in your cart.');
+    alert("This product is already in your cart.");
   } else {
     // Add product to cart data
     cartData.push({ productId, quantity });
 
     // Save updated cart data to localStorage
-    localStorage.setItem('cartData', JSON.stringify(cartData));
+    localStorage.setItem("cartData", JSON.stringify(cartData));
 
     // Update cart count
     cartCount += 1;
@@ -94,6 +94,6 @@ function addToCart(productId, quantity) {
 
 showProduct();
 
-document.querySelector('.cart-icon').addEventListener('click', function() {
-  window.location.href = 'cart.html'; // Replace with the actual URL of your cart summary page
+document.querySelector(".cart-icon").addEventListener("click", function () {
+  window.location.href = "cart.html"; // Replace with the actual URL of your cart summary page
 });
