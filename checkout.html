@@ -93,7 +93,18 @@
             </div>
           </form>
 
-          <h2>Payment Method</h2>
+          
+          <div id="credit-card-info" class="mb-3 d-none">
+            <label for="credit-card-number" class="form-label">Credit Card Number</label>
+            <input type="text" class="form-control" id="credit-card-number">
+          </div>
+         
+        </div>
+
+        <div class="col-12 col-md-6">
+          <h2 class="text-center">Order Summary</h2>
+          <div class="order-summary mt-3"></div>
+          <h2 class="text-center py-3">Payment Method</h2>
           <div class="mb-3">
             <label for="payment-method" class="form-label">Choose Payment Method</label>
             <select class="form-select" id="payment-method" required>
@@ -103,16 +114,8 @@
               <option value="cash-on-delivery">Cash on Delivery</option>
             </select>
           </div>
-          <div id="credit-card-info" class="mb-3 d-none">
-            <label for="credit-card-number" class="form-label">Credit Card Number</label>
-            <input type="text" class="form-control" id="credit-card-number">
-          </div>
           <button type="submit" class="btn btn-primary w-100">Place Order</button>
-        </div>
 
-        <div class="col-12 col-md-6">
-          <h2 class="text-center">Order Summary</h2>
-          <div class="order-summary mt-3"></div>
         </div>
       </div>
     </section>
