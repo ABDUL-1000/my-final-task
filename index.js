@@ -31,15 +31,16 @@ function getItem() {
     .then((data) => {
         data.forEach((product, index) => {
             let productItem = `
-                <div class="col each-item">
-                    <div class="card each">
-                        <img class="card-img" src="${product.image}" class="card-img-top" alt="${product.title}">
-                        <div class="card-body">
-                            <h5 class="card-title">${product.title}</h5>
-                            <p class="card-text">$${product.price}</p>
-                        </div>
-                    </div>
-                </div>
+               <div class="col each-item">
+    <div class="card each">
+        <img class="card-img-center card-img-top" src="${product.image}" alt="${product.title}">
+        <div class="card-body">
+            <h5 class="card-title small-text">${product.title}</h5>
+            <p class="card-text small-text">$${product.price}</p>
+        </div>
+    </div>
+</div>
+
             `;
             productView.innerHTML += productItem;
         });

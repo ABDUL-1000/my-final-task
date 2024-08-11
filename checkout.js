@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 // Join all the individual item HTML strings
                 orderSummaryHTML += itemsHTML.join('');
                 orderSummaryHTML += '</ul>';
-
+            
                 // Add the total amount to the HTML
                 orderSummaryHTML += `
                     <div class="mt-3">
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector('button[type="submit"]').addEventListener('click', function (e) {
             e.preventDefault();
             saveOrderSummary();
-            console.log("its clicked");
+            // console.log("its clicked");
             window.location.href = 'order-summary.html';
         });
     }

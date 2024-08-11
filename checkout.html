@@ -9,16 +9,17 @@
 </head>
 <body>
   <!-- Include Header -->
-  <header class="bg-transparent sticky-top text-white">
-    <nav class="navbar navbar-expand-lg bg-body-white text-white">
-      <div class="container-fluid text-white">
+  <header class="sticky-top text-white">
+    <nav class="navbar navbar-expand-lg bg-light text-dark"> <!-- Changed bg-transparent to bg-light -->
+      <div class="container-fluid">
         <img src="./images/WhatsApp_Image_2021-08-10_at_12.52 1.png" alt="logo" width="50" height="50">
         
         <!-- Cart Icon Moved Before the Toggle Button -->
-        <div class="cart-icon position-relative me-3">
+        <div class="cart-icon position-relative me-3 d-none d-lg-block">
           <span class="cart-count position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
           <img class="cart-icon" src="./images/carts.png" alt="Cart" width="25" height="25">
-        </div>
+      </div>
+      
   
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -114,7 +115,7 @@
               <option value="cash-on-delivery">Cash on Delivery</option>
             </select>
           </div>
-          <button type="submit" class="btn btn-primary w-100">Place Order</button>
+          <a href="order-summary.html"><button type="submit" class="btn btn-primary w-100">Place Order</button></a>
 
         </div>
       </div>

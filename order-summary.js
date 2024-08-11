@@ -62,6 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 // Set the accumulated HTML to the container
                 orderSummaryContainer.innerHTML = orderSummaryHTML;
+                // console.log(orderSummaryContainer);
             })
             .catch(error => {
                 console.error('Error fetching product data:', error);
